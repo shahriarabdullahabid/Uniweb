@@ -1,0 +1,422 @@
+body{
+
+    margin: 0;
+
+    overflow-x: hidden;
+
+}
+
+
+
+.banner{
+
+    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 50vh;
+
+    position: relative;
+
+    animation: slide 15s infinite;
+
+}
+
+
+
+@keyframes slide {
+
+    0% {
+
+        /*1st img*/
+
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    }
+
+    33% {
+
+        /*2nd img*/
+
+        background-image: url('https://pis.juniv.edu/slide3.jpg');
+
+    }
+
+    66% {
+
+        /*3rd img*/
+
+        background-image: url('https://www.dailymessenger.net/media/imgAll/2022February/en/JU-2309041809.jpg');
+
+    }
+
+    100% {
+
+         /*Back to 1st img*/
+
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    }
+
+}
+
+
+
+.overlay{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.banner-title{
+
+    position: relative;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 3rem;
+
+    font-family: fantasy;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+/* Header Styling */
+.section-header {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Poppins', serif; 
+    color: #222;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+    padding: 30px 0;
+    position: relative;
+}
+
+/* Container to hold all profiles */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Profile Card */
+.profile-card {
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Roboto Slab', serif; 
+}
+
+.profile-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Poppins', serif; 
+}
+
+.profile-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Profile Card Button */
+.profile-card button {
+    background-color: #041838;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+}
+
+.profile-card button:hover {
+    background-color: #0d3f8f;
+}
+
+/* Pop-up Styling */
+.popup {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: #041838;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    z-index: 1000;
+    display: none;
+}
+
+/* Popup Content */
+.popup-content {
+    padding: 20px 30px;
+    text-align: justify;
+    position: relative;
+    color: #f1ebebfc;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-top: 40px;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* Close button styling */
+.popup-content .close-btn {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1001;
+}
+
+/* Close button hover effect */
+.popup-content .close-btn:hover {
+    background-color: #937171;
+    color: #fff;
+    border-radius: 5px;
+    transform: scale(1.0);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .container { grid-template-columns: repeat(2, 1fr); }
+    .popup { width: 70%; }
+    .profile-card img { width: 250px; height: 250px; }
+}
+
+@media (max-width: 600px) {
+    .container { grid-template-columns: 1fr; padding: 10px; }
+    .popup { width: 90%; }
+    .profile-card img { width: 200px; height: 200px; }
+    .section-header { font-size: 24px; }
+    .popup-content { padding: 15px 20px; }
+    .popup-content .close-btn { font-size: 20px; }
+}
+
+
+
+
+/* footer */
+footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#upper-footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#lower-footer{
+
+    background-color: white;
+
+}
+
+
+
+.footer-logo{
+
+    height: 70px;
+
+    width: 70px;
+
+}
+
+
+
+.footer-links{
+
+    font-family: "Poppins", serif;
+
+    color: gray;
+
+    text-decoration: none;
+
+    
+
+}
+
+
+
+.footer-links:hover{
+
+    color: crimson;
+
+}
+
+
+
+.logo-nav{
+
+    height: 50px;
+
+    width: 50px;
+
+}
+
+
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+
+    color: crimson;
+
+}
+
+
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active { 
+
+    color: crimson;
+
+    background-color: #F8F9FA;
+
+}
+
+
+
+
+
+#aboutDropdown{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    padding: 20px;
+
+    margin: 0;
+
+}
+
+
+
+#aboutDropdown:hover{
+
+    color: crimson;
+
+    text-decoration: underline;
+
+}
+
+
+
+.dropdown-item{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    margin: 0;
+
+}
+
+
+
+.dropdown-item-list{
+
+    padding-top: 5px;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+p{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+span{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+thead{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+tbody{
+
+    font-family: "Poppins", serif;
+
+}

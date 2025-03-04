@@ -1,0 +1,306 @@
+body{
+
+    margin: 0;
+
+    overflow-x: hidden;
+
+}
+
+.banner{
+
+    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 50vh;
+
+    position: relative;
+
+    animation: slide 15s infinite;
+
+}
+
+
+
+@keyframes slide {
+
+    0% {
+
+        /*1st img*/
+
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    }
+
+    33% {
+
+        /*2nd img*/
+
+        background-image: url('https://pis.juniv.edu/slide3.jpg');
+
+    }
+
+    66% {
+
+        /*3rd img*/
+
+        background-image: url('https://www.dailymessenger.net/media/imgAll/2022February/en/JU-2309041809.jpg');
+
+    }
+
+    100% {
+
+         /*Back to 1st img*/
+
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    }
+
+}
+
+
+
+.overlay{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.banner-title{
+
+    position: relative;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 3rem;
+
+    font-family: fantasy;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+/* Image Settings for Director's Photo */
+#director-message img {
+    width: 160px; 
+    height: 250px; 
+    display: block;
+    margin: 0 auto; 
+    object-fit: cover;  
+}
+
+#director-message p {
+    font-size: 1rem; 
+    line-height: 1.8; 
+    color: #0b0101; 
+    text-align: justify; 
+    margin-top: 25px; 
+    font-weight: normal; 
+    font-family: "Poppins", serif;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+ 
+    #director-message p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* footer */
+footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#upper-footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#lower-footer{
+
+    background-color: white;
+
+}
+
+
+
+.footer-logo{
+
+    height: 70px;
+
+    width: 70px;
+
+}
+
+
+
+.footer-links{
+
+    font-family: "Poppins", serif;
+
+    color: gray;
+
+    text-decoration: none;
+
+    
+
+}
+
+
+
+.footer-links:hover{
+
+    color: crimson;
+
+}
+
+
+
+.logo-nav{
+
+    height: 50px;
+
+    width: 50px;
+
+}
+
+
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+
+    color: crimson;
+
+}
+
+
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active { 
+
+    color: crimson;
+
+    background-color: #F8F9FA;
+
+}
+
+
+
+
+
+#aboutDropdown{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    padding: 20px;
+
+    margin: 0;
+
+}
+
+
+
+#aboutDropdown:hover{
+
+    color: crimson;
+
+    text-decoration: underline;
+
+}
+
+
+
+.dropdown-item{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    margin: 0;
+
+}
+
+
+
+.dropdown-item-list{
+
+    padding-top: 5px;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+p{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+span{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+thead{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+tbody{
+
+    font-family: "Poppins", serif;
+
+}

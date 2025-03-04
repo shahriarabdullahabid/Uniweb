@@ -1,0 +1,519 @@
+body{
+
+    margin: 0;
+
+    overflow-x: hidden;
+
+}
+
+
+
+.banner{
+
+    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 50vh;
+
+    position: relative;
+
+    animation: slide 15s infinite;
+
+}
+
+
+
+@keyframes slide {
+
+    0% {
+
+        /*1st img*/
+
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    }
+
+    33% {
+
+        /*2nd img*/
+
+        background-image: url('https://pis.juniv.edu/slide3.jpg');
+
+    }
+
+    66% {
+
+        /*3rd img*/
+
+        background-image: url('https://www.dailymessenger.net/media/imgAll/2022February/en/JU-2309041809.jpg');
+
+    }
+
+    100% {
+
+         /*Back to 1st img*/
+
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    }
+
+}
+
+
+
+.overlay{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.banner-title{
+
+    position: relative;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 3rem;
+
+    font-family: fantasy;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+/* Campus Overview */
+#campus-overview p {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #0b0101;
+    text-align: justify;
+    margin-top: 25px;
+    font-weight: normal;
+}
+#campus-overview h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+/* Virtual tour section */
+/* Moving text wrapper */
+
+#virtual-tour h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.moving-text-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    white-space: nowrap; 
+    display: flex;
+    align-items: center;
+}
+
+/* Inner text container for continuous flow */
+.moving-text-container {
+    display: flex;
+    animation: scroll-text 20s linear infinite; 
+}
+
+/* Individual moving text items */
+.moving-text {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: red;
+    margin-right: 50px; 
+}
+
+/* Keyframes for infinite scrolling */
+@keyframes scroll-text {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
+
+#virtual-tour iframe {
+    width: 100%;     
+    height: 80vh;   
+}
+
+
+@media (max-width: 768px) {
+    #campus-overview p {
+        font-size: 1rem;  
+        padding: 0 20px;  
+    }
+}
+
+
+/* Campus Facilities Section */
+#campus-facilities h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+#campus-facilities {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#campus-facilities .facility-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#campus-facilities .facility-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0; 
+}
+
+#campus-facilities .facility-info {
+    padding: 15px;
+    flex-grow: 1; 
+    border-radius: 0 0 10px 10px; 
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); 
+    background-color: #041838;
+    text-align: justify;
+    color: white;
+    
+}
+
+
+#campus-facilities p {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Vibrant Campus Life Section */
+#vibrant-campus-life h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+#vibrant-campus-life {
+    background-color: white;
+    padding: 50px 0;
+}
+
+#vibrant-campus-life .carousel-caption {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#vibrant-campus-life .carousel-caption h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+#vibrant-campus-life .carousel-caption p {
+    font-size: 1rem;
+}
+
+#vibrant-campus-life .carousel-control-prev-icon,
+#vibrant-campus-life .carousel-control-next-icon {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.carousel-item {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+    object-fit: cover; 
+    height: 500px; 
+    width: 100%; 
+}
+
+
+
+/* Student Spotlights */
+#student-spotlights h6 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    
+}
+#student-spotlights {
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+#student-spotlights .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: white;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #041838;
+    align-items: center;
+    flex: 1;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial img {
+    max-width: 150px;
+    max-height: 100px;
+    margin-bottom: 20px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+
+.testimonial p.text-muted {
+    font-size: 0.9rem;
+    color: rgba(179, 20, 20, 0.956) !important;
+}
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    #student-spotlights .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+/* footer */
+footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#upper-footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#lower-footer{
+
+    background-color: white;
+
+}
+
+
+
+.footer-logo{
+
+    height: 70px;
+
+    width: 70px;
+
+}
+
+
+
+.footer-links{
+
+    font-family: "Poppins", serif;
+
+    color: gray;
+
+    text-decoration: none;
+
+    
+
+}
+
+
+
+.footer-links:hover{
+
+    color: crimson;
+
+}
+
+
+
+.logo-nav{
+
+    height: 50px;
+
+    width: 50px;
+
+}
+
+
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+
+    color: crimson;
+
+}
+
+
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active { 
+
+    color: crimson;
+
+    background-color: #F8F9FA;
+
+}
+
+
+
+
+
+#aboutDropdown{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    padding: 20px;
+
+    margin: 0;
+
+}
+
+
+
+#aboutDropdown:hover{
+
+    color: crimson;
+
+    text-decoration: underline;
+
+}
+
+
+
+.dropdown-item{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    margin: 0;
+
+}
+
+
+
+.dropdown-item-list{
+
+    padding-top: 5px;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+p{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+span{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+thead{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+tbody{
+
+    font-family: "Poppins", serif;
+
+}

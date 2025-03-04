@@ -1,0 +1,683 @@
+/* Fullscreen Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    color: white;
+}
+
+/* Background Video */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 50%;
+}
+
+/* Subtitle */
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-weight: bold;
+}
+
+/* Title */
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.highlight {
+    color: #f7b731; 
+    text-decoration: underline;
+}
+
+/* Buttons */
+.hero-buttons .btn-danger,
+.hero-buttons .btn-outline-light {
+    padding: 12px 25px;
+    font-size: 1rem;
+}
+
+.hero-buttons .btn-danger {
+    background-color: #FF4C4C;
+    border: none;
+}
+
+.hero-buttons .btn-outline-light {
+    border: 2px solid white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-left: 2%;
+    }
+    .hero-content {
+        max-width: 80%;
+        text-align: left;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .hero-buttons .btn-danger,
+    .hero-buttons .btn-outline-light {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    .hero-buttons .btn-danger,
+    .hero-buttons .btn-outline-light {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+}
+
+
+
+
+/* About Section */
+
+.about-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #FF4C4C;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+    text-align: justify;
+}
+
+/* Student Counter Section */
+.counters {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.counter {
+    text-align: center;
+    padding: 20px;
+    width: 250px; 
+    height: 200px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: #041838;
+    flex-shrink: 0; 
+    animation: scrollRightLeft 16s linear infinite; 
+}
+
+.counter .count {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.counter p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+@keyframes scrollRightLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    20% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-400%); 
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-heading {
+        font-size: 1.5rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .counter .count {
+        font-size: 2rem;
+    }
+ 
+    .counters {
+        flex-direction: row;
+    }
+}
+
+
+
+/* Program Section */
+.program-section {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.text-center-wrapper {
+    width: 100%;         
+    display: flex;      
+    justify-content: center;  
+    align-items: center;       
+}
+
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #d9534f;
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.program-section .card {
+    border: none;
+    padding: 20px;
+    text-align: justify;
+    background-color: #ffffff;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0;
+    height: 400px;
+}
+
+/* Ensures title, description, and list are evenly spaced */
+.program-section .card .card-title, 
+.program-section .card .card-text, 
+.program-section .card .card-list {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Thin light white line between title and description */
+.program-section .card .card-title {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+    padding-bottom: 12px; 
+    margin-bottom: 10px; 
+}
+
+/* Thin light white line between description and list */
+.program-section .card .card-text {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px; 
+    margin-bottom: 10px; 
+}
+
+/* Thin light white line after list items */
+.program-section .card .card-list {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); 
+    padding-bottom: 10px; 
+    margin-bottom: 10px; 
+}
+
+.campus-text {
+    color: black; /* Make text black */
+    text-align: justify; /* Justify text */
+}
+
+
+
+/* program section */
+.program-section .card-undergraduate {
+    background-color: #041838; 
+    color: #ffffff !important;
+}
+
+.program-section .card-graduate {
+    background-color: #f7b731; 
+    color: #000000 !important;
+}
+
+.program-section .card-online {
+    background-color: #041838; 
+    color: #ffffff !important;
+}
+
+
+
+#imageCarousel {
+    height: 500px; 
+    overflow: hidden;
+    position: relative; 
+}
+
+#imageCarousel .carousel-inner {
+    height: 100%; 
+}
+
+#imageCarousel .carousel-item {
+    position: relative; 
+    height: 100%; 
+}
+
+#imageCarousel .carousel-item img {
+    object-fit: cover; 
+    height: 100%;
+    width: 100%; 
+}
+
+#imageCarousel .carousel-caption {
+    position: absolute; 
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 90%; 
+    text-align: center; 
+    color: white; 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+}
+
+
+
+/* Notice Section Styles */
+.notice-item {
+    background-color: #041838; 
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: none; 
+    transition: transform 0.3s ease; 
+    height: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+/* Hover effect for the notice item */
+.notice-item:hover {
+    transform: translateY(-5px); 
+}
+
+/* Title styling */
+.notice-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 10px;
+}
+
+/* Date styling */
+.notice-date {
+    font-size: 0.875rem;
+    color: #f7b731; 
+    margin-bottom: 15px;
+}
+
+/* Content styling */
+.notice-content {
+    font-size: 1rem;
+    color: #ffffff; 
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* View all link container */
+.view-all-container {
+    padding-bottom: 20px;
+}
+
+.view-all-link {
+    font-size: 20px;
+    color: black; 
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .notice-item {
+        padding: 15px;
+    }
+
+    .notice-title {
+        font-size: 1.1rem;
+    }
+
+    .notice-content {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* News Section Container */
+.news-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.news-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+}
+
+
+.news-content {
+    flex: 1;
+}
+
+
+.news-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.news-date {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #f7b731; 
+    margin-bottom: 10px;
+}
+
+.news-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color:#000000; 
+    text-align: justify;
+  
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .news-content {
+        max-width: 100%;
+        text-align: left; 
+    }
+}
+
+
+
+
+/* Graduates description */
+.graduates-section {
+    background-color: #041838; 
+    padding: 50px 0;
+    border-top: 5px solid #f7b731;  
+    border-bottom: 5px solid #f7b731;
+}
+
+.graduates-statistic {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px; 
+    font-weight: bold;
+    color: #e51912;
+    margin-bottom: 10px;
+}
+
+.graduates-description {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px; 
+    color: #f7b731;
+}
+
+/* Working Places List */
+.places-list {
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0; 
+    display: block;
+}
+
+.places-list li {
+    margin-bottom: 10px; 
+    text-align: center; 
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .graduates-statistic {
+        font-size: 36px; 
+    }
+
+    .graduates-description {
+        font-size: 16px; 
+    }
+
+    .places-list li {
+        font-size: 14px; 
+    }
+}
+
+
+
+
+/* footer */
+footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#upper-footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#lower-footer{
+
+    background-color: white;
+
+}
+
+
+
+.footer-logo{
+
+    height: 70px;
+
+    width: 70px;
+
+}
+
+
+
+.footer-links{
+
+    font-family: "Poppins", serif;
+
+    color: gray;
+
+    text-decoration: none;
+
+    
+
+}
+
+
+
+.footer-links:hover{
+
+    color: crimson;
+
+}
+
+
+
+.logo-nav{
+
+    height: 50px;
+
+    width: 50px;
+
+}
+
+
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+
+    color: crimson;
+
+}
+
+
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active { 
+
+    color: crimson;
+
+    background-color: #F8F9FA;
+
+}
+
+
+
+
+
+#aboutDropdown{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    padding: 20px;
+
+    margin: 0;
+
+}
+
+
+
+#aboutDropdown:hover{
+
+    color: crimson;
+
+    text-decoration: underline;
+
+}
+
+
+
+.dropdown-item{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    margin: 0;
+
+}
+
+
+
+.dropdown-item-list{
+
+    padding-top: 5px;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+p{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+span{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+thead{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+tbody{
+
+    font-family: "Poppins", serif;
+
+}

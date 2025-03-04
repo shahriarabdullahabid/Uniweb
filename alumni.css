@@ -1,0 +1,595 @@
+body{
+
+    margin: 0;
+
+    overflow-x: hidden;
+
+}
+
+
+
+.banner{
+
+    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 50vh;
+
+    position: relative;
+
+    animation: slide 15s infinite;
+
+}
+
+
+
+@keyframes slide {
+
+    0% {
+
+        /*1st img*/
+
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    }
+
+    33% {
+
+        /*2nd img*/
+
+        background-image: url('https://pis.juniv.edu/slide3.jpg');
+
+    }
+
+    66% {
+
+        /*3rd img*/
+
+        background-image: url('https://www.dailymessenger.net/media/imgAll/2022February/en/JU-2309041809.jpg');
+
+    }
+
+    100% {
+
+         /*Back to 1st img*/
+
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    }
+
+}
+
+
+
+.overlay{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.banner-title{
+
+    position: relative;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 3rem;
+
+    font-family: fantasy;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+/* About Us Section */
+.about-us h2 {
+    font-size: 1.8rem; 
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 10px;
+  }
+  
+  .about-us p {
+    text-align: justify;
+    line-height: 1.6; 
+    font-size: 1rem; 
+    margin-bottom: 1rem; 
+    color: black; 
+    padding-left: 100px; 
+    padding-right: 100px; 
+    padding-top: 10px; 
+  }
+  
+/* Membership Guideline Section */
+.membership-guideline-container {
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.membership-intro h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.membership-intro p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: red;
+}
+
+.membership-options {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.membership-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 300px; 
+}
+
+.membership-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #032253;
+    margin-bottom: 10px;
+}
+
+.membership-card p {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Allows the paragraph to grow and fill the space */
+}
+
+.action-btn {
+    background: #032253;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    display: inline-block;
+    width: auto; /
+    min-width: 120px;
+    text-align: center;
+}
+
+.action-btn:hover {
+    background: #0d3f8f;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+.membership-footer .contact-info {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.membership-footer .contact-info p {
+    margin-bottom: 10px;
+}
+
+.membership-footer .social-media-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.membership-footer .social-media-links li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.membership-footer .social-link {
+    font-size: 1rem;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.membership-footer .social-link:hover {
+    text-decoration: underline;
+}
+
+
+/*upcoming events*/
+.upcoming-events {
+    background-color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.upcoming-events h2 {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.upcoming-events p.text-muted {
+    font-size: 1rem;
+    color: red !important;
+    margin-bottom: 30px;
+}
+
+.event-card {
+    background: #032253;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    color: white;
+}
+
+.event-title {
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.event-date,
+.event-location,
+.event-fee,
+.event-contact {
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.event-description {
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.event-contact a,
+.event-contact a:hover {
+    color: #214ee3;
+    text-decoration: underline;
+}
+
+.event-card a.btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #214ee3;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.event-card a.btn:hover {
+    background-color: #193b99;
+}
+
+
+  
+/* Memory Corner Section */
+.memory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.memory-card {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.memory-red {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.memory-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+
+
+.memory-description {
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 70px; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.memory-description h5 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.memory-description p {
+    font-size: 0.7rem;
+}
+
+/* General Responsive Styling */
+@media (max-width: 768px) {
+    .about-us p {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .membership-card {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
+  
+    .membership-options {
+      flex-direction: column; 
+    }
+  
+    .event-card {
+      margin-bottom: 20px;
+    }
+  
+    .memory-grid {
+      grid-template-columns: 1fr; 
+    }
+  
+    .memory-description {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .membership-guideline-container {
+      padding: 20px;
+    }
+  
+    .action-btn {
+      font-size: 0.8rem;
+      padding: 6px 15px;
+    }
+  
+    .event-title {
+      font-size: 1rem;
+    }
+  
+    .event-date,
+    .event-location,
+    .event-fee,
+    .event-contact {
+      font-size: 0.8rem;
+    }
+  }
+  
+
+
+/* footer */
+footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#upper-footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#lower-footer{
+
+    background-color: white;
+
+}
+
+
+
+.footer-logo{
+
+    height: 70px;
+
+    width: 70px;
+
+}
+
+
+
+.footer-links{
+
+    font-family: "Poppins", serif;
+
+    color: gray;
+
+    text-decoration: none;
+
+    
+
+}
+
+
+
+.footer-links:hover{
+
+    color: crimson;
+
+}
+
+
+
+.logo-nav{
+
+    height: 50px;
+
+    width: 50px;
+
+}
+
+
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+
+    color: crimson;
+
+}
+
+
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active { 
+
+    color: crimson;
+
+    background-color: #F8F9FA;
+
+}
+
+
+
+
+
+#aboutDropdown{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    padding: 20px;
+
+    margin: 0;
+
+}
+
+
+
+#aboutDropdown:hover{
+
+    color: crimson;
+
+    text-decoration: underline;
+
+}
+
+
+
+.dropdown-item{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    margin: 0;
+
+}
+
+
+
+.dropdown-item-list{
+
+    padding-top: 5px;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+p{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+span{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+thead{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+tbody{
+
+    font-family: "Poppins", serif;
+
+}

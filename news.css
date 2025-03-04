@@ -1,0 +1,363 @@
+body{
+
+    margin: 0;
+
+    overflow-x: hidden;
+
+}
+
+
+
+.banner{
+
+    background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+
+    background-repeat: no-repeat;
+
+    height: 50vh;
+
+    position: relative;
+
+    animation: slide 15s infinite;
+
+}
+
+
+
+@keyframes slide {
+
+    0% {
+
+        /*1st img*/
+
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    }
+
+    33% {
+
+        /*2nd img*/
+
+        background-image: url('https://pis.juniv.edu/slide3.jpg');
+
+    }
+
+    66% {
+
+        /*3rd img*/
+
+        background-image: url('https://www.dailymessenger.net/media/imgAll/2022February/en/JU-2309041809.jpg');
+
+    }
+
+    100% {
+
+         /*Back to 1st img*/
+
+        background-image: url('https://www.iba-ju.edu.bd/wp-content/uploads/2022/11/three-hall-768x360-1.jpg');
+
+    }
+
+}
+
+
+
+.overlay{
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    height: 100%;
+
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+.banner-title{
+
+    position: relative;
+
+    text-align: center;
+
+    color: white;
+
+    font-size: 3rem;
+
+    font-family: fantasy;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+/* News Section Container */
+.news-section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.news-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+
+.news-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+}
+
+
+.news-image {
+    flex: 0 0 30%;
+    margin-right: 20px;
+}
+
+.news-image img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+/* Content Section (Right Side) */
+.news-content {
+    flex: 1;
+}
+
+
+.news-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.news-date {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: #f6ac0d;
+    margin-bottom: 10px;
+}
+
+
+.news-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Responsive Design ^*/
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .news-content {
+        max-width: 100%;
+        text-align: center; 
+    }
+}
+
+
+
+
+
+
+
+/* footer */
+footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#upper-footer{
+
+    background-color: #F6F6F6;
+
+}
+
+
+
+#lower-footer{
+
+    background-color: white;
+
+}
+
+
+
+.footer-logo{
+
+    height: 70px;
+
+    width: 70px;
+
+}
+
+
+
+.footer-links{
+
+    font-family: "Poppins", serif;
+
+    color: gray;
+
+    text-decoration: none;
+
+    
+
+}
+
+
+
+.footer-links:hover{
+
+    color: crimson;
+
+}
+
+
+
+.logo-nav{
+
+    height: 50px;
+
+    width: 50px;
+
+}
+
+
+
+.navbar-light .navbar-nav .dropdown-menu .dropdown-item:hover {
+
+    color: crimson;
+
+}
+
+
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item:active { 
+
+    color: crimson;
+
+    background-color: #F8F9FA;
+
+}
+
+
+
+
+
+#aboutDropdown{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    padding: 20px;
+
+    margin: 0;
+
+}
+
+
+
+#aboutDropdown:hover{
+
+    color: crimson;
+
+    text-decoration: underline;
+
+}
+
+
+
+.dropdown-item{
+
+    font-family: "Poppins", serif;
+
+    color: black;
+
+    font-weight:500;
+
+    margin: 0;
+
+}
+
+
+
+.dropdown-item-list{
+
+    padding-top: 5px;
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+p{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+span{
+
+    font-family: "Poppins", serif;
+
+}
+
+
+
+thead{
+
+    font-family: "Roboto Slab", serif;
+
+}
+
+
+
+tbody{
+
+    font-family: "Poppins", serif;
+
+}
